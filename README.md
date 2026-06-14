@@ -1,4 +1,4 @@
-# Uniform Platform Call of Embedded Software
+# Uniform Platform of Embedded Software
 
 This project provides a uniform platform for calling embedded software functions, ensuring consistency and ease of integration across different embedded systems.
 

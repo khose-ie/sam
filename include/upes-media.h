@@ -1,15 +1,15 @@
-#ifndef _UPCES_MEDIA_H_
-#define _UPCES_MEDIA_H_
+#ifndef _UPES_MEDIA_H_
+#define _UPES_MEDIA_H_
 
-/// @file upces-media.h
-/// @brief UPCES Media module public API
-/// @details This header file defines the public API for the UPCES Media module.
+/// @file upes-media.h
+/// @brief UPES Media module public API
+/// @details This header file defines the public API for the UPES Media module.
 ///     It includes type definitions, constants, and function prototypes for media operations.
 /// @author Khose-ie <khose-ie@outlook.com>
 /// @date 2026-06-14
 
 #include <stdint.h>
-#include <upces.h>
+#include <upes.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -362,4 +362,4 @@ RetValue_t media_dir_rewind(mediaDirHandle_t dir);
 }
 #endif // __cplusplus
 
-#endif // _UPCES_MEDIA_H_
+#endif // _UPES_MEDIA_H_

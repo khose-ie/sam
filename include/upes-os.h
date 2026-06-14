@@ -1,9 +1,9 @@
-#ifndef _UPCES_OS_H_
-#define _UPCES_OS_H_
+#ifndef _UPES_OS_H_
+#define _UPES_OS_H_
 
-/// @file upces-os.h
-/// @brief UPCES OS Abstraction Layer
-/// @details This header file defines the OS abstraction layer for UPCES, providing
+/// @file upes-os.h
+/// @brief UPES OS Abstraction Layer
+/// @details This header file defines the OS abstraction layer for UPES, providing
 ///          types and function prototypes for various OS services such as tasks,
 ///          events, message queues, memory pools, mutexes, semaphores, and timers.
 ///          The implementation of these functions should be provided in the corresponding
@@ -12,7 +12,7 @@
 /// @date   2026-06-14
 
 #include <stdint.h>
-#include <upces.h>
+#include <upes.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -581,4 +581,4 @@ void os_timer_stop(osTimerHandle_t timer);
 }
 #endif // __cplusplus
 
-#endif // _UPCES_OS_H_
+#endif // _UPES_OS_H_
