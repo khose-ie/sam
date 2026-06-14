@@ -13,7 +13,7 @@ extern "C" {
 #endif // __cplusplus
 
 /// @brief Standard return value enumeration
-/// @details Represents standard return values for SCES functions
+/// @details Represents standard return values for UPCES functions
 typedef enum
 {
     //===============================
