@@ -1,5 +1,5 @@
-#ifndef __UPCES_H__
-#define __UPCES_H__
+#ifndef _UPCES_H_
+#define _UPCES_H_
 
 /// @file upces.h
 /// @brief UPCES Common Definitions
@@ -116,4 +116,4 @@ typedef enum
 }
 #endif // __cplusplus
 
-#endif // __UPCES_H__
+#endif // _UPCES_H_

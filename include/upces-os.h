@@ -1,5 +1,5 @@
-#ifndef __UPCES_OS_H__
-#define __UPCES_OS_H__
+#ifndef _UPCES_OS_H_
+#define _UPCES_OS_H_
 
 /// @file upces-os.h
 /// @brief UPCES OS Abstraction Layer
@@ -170,7 +170,7 @@ void os_exit_task_static(void);
 /// @brief  Allocate memory from the OS memory pool
 /// @details This function allocates a block of memory of the specified size from the OS memory
 ///          pool.
-///.         The os implementation will choice the best fit memory block from the pool.
+/// The OS implementation will choose the best-fit memory block from the pool.
 /// @param size Size of memory want to allocate in bytes
 /// @return Pointer to the allocated memory block, or NULL on failure
 void* os_malloc(uint32_t size);
@@ -289,12 +289,12 @@ uint32_t os_message_queue_message_count(osMessageQueueHandle_t queue);
 /// @return Maximum number of messages the queue can hold
 uint32_t os_message_queue_max_message_count(osMessageQueueHandle_t queue);
 
-/// @brief  Receive a message from the queue
-/// @details This function receives a message from the specified message queue.
+/// @brief  Send a message to the queue
+/// @details This function sends a message to the specified message queue.
 /// @param queue    Handle to the message queue
-/// @param message  Pointer to the buffer to store the received message
-/// @param timeout  Timeout in milliseconds to wait for a message (0 for no wait, UINT32_MAX for
-/// infinite wait)
+/// @param message  Pointer to the buffer containing the message to send
+/// @param timeout  Timeout in milliseconds to wait (0 for no wait, OS_WAIT_FOREVER for
+///                 infinite wait)
 /// @return RET_VALUE_OK on success, error code otherwise
 RetValue_t os_message_queue_send(osMessageQueueHandle_t queue, const void* message,
                                  uint32_t timeout);
@@ -581,4 +581,4 @@ void os_timer_stop(osTimerHandle_t timer);
 }
 #endif // __cplusplus
 
-#endif // __UPCES_OS_H__
+#endif // _UPCES_OS_H_

@@ -1,19 +1,19 @@
-#ifndef __UPCES_MEDIA_H__
-#define __UPCES_MEDIA_H__
+#ifndef _UPCES_MEDIA_H_
+#define _UPCES_MEDIA_H_
 
 /// @file upces-media.h
 /// @brief UPCES Media module public API
 /// @details This header file defines the public API for the UPCES Media module.
 ///     It includes type definitions, constants, and function prototypes for media operations.
-/// @author Khose-ie<khose-ie@outlook.com>
-/// @date 2024-06-10
+/// @author Khose-ie <khose-ie@outlook.com>
+/// @date 2026-06-14
 
 #include <stdint.h>
 #include <upces.h>
 
 #ifdef __cplusplus
 extern "C" {
-#endif
+#endif // __cplusplus
 
 /// @brief File system handle type
 /// @details This type represents a handle to a mounted file system.
@@ -360,6 +360,6 @@ RetValue_t media_dir_rewind(mediaDirHandle_t dir);
 
 #ifdef __cplusplus
 }
-#endif
+#endif // __cplusplus
 
-#endif // __UPCES_MEDIA_H__
+#endif // _UPCES_MEDIA_H_
