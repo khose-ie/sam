@@ -1,9 +1,9 @@
-#ifndef _UPES_H_
-#define _UPES_H_
+#ifndef _SAM_H_
+#define _SAM_H_
 
-/// @file upes.h
-/// @brief UPES Common Definitions
-/// @details This header file defines common types and return values used across the UPES
+/// @file sam.h
+/// @brief SAM Common Definitions
+/// @details This header file defines common types and return values used across the SAM
 ///          middleware and its components.
 /// @author Khose-ie<khose-ie@outlook.com>
 /// @date   2026-06-14
@@ -13,7 +13,7 @@ extern "C" {
 #endif // __cplusplus
 
 /// @brief Standard return value enumeration
-/// @details Represents standard return values for UPES functions
+/// @details Represents standard return values for SAM functions
 typedef enum
 {
     //===============================
@@ -124,4 +124,4 @@ typedef enum
 }
 #endif // __cplusplus
 
-#endif // _UPES_H_
+#endif // _SAM_H_

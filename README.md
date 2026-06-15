@@ -1,9 +1,9 @@
-# Uniform Platform of Embedded Software
+# Sample Abstraction-Layer for MCU
 
-This project provides a uniform platform for calling embedded software functions, ensuring consistency and ease of integration across different embedded systems.
+This project provides a standardized abstraction layer for microcontroller units (MCUs), facilitating consistent and simplified integration of embedded software across different platforms.
 
 ## Features
-- Standardized API for embedded software calls
+- Standardized API for embedded software
 - Cross-platform compatibility
 - Simplified integration process
 - Consistent error handling

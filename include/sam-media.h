@@ -1,15 +1,15 @@
-#ifndef _UPES_MEDIA_H_
-#define _UPES_MEDIA_H_
+#ifndef _SAM_MEDIA_H_
+#define _SAM_MEDIA_H_
 
-/// @file upes-media.h
-/// @brief UPES Media module public API
-/// @details This header file defines the public API for the UPES Media module.
+/// @file sam-media.h
+/// @brief SAM Media module public API
+/// @details This header file defines the public API for the SAM Media module.
 ///     It includes type definitions, constants, and function prototypes for media operations.
 /// @author Khose-ie <khose-ie@outlook.com>
 /// @date 2026-06-14
 
+#include <sam.h>
 #include <stdint.h>
-#include <upes.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -362,4 +362,4 @@ RetValue_t media_dir_rewind(mediaDirHandle_t dir);
 }
 #endif // __cplusplus
 
-#endif // _UPES_MEDIA_H_
+#endif // _SAM_MEDIA_H_

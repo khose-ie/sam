@@ -1,9 +1,9 @@
-#ifndef _UPES_OS_H_
-#define _UPES_OS_H_
+#ifndef _SAM_OS_H_
+#define _SAM_OS_H_
 
-/// @file upes-os.h
-/// @brief UPES OS Abstraction Layer
-/// @details This header file defines the OS abstraction layer for UPES, providing
+/// @file sam-os.h
+/// @brief SAM OS Abstraction Layer
+/// @details This header file defines the OS abstraction layer for SAM, providing
 ///          types and function prototypes for various OS services such as tasks,
 ///          events, message queues, memory pools, mutexes, semaphores, and timers.
 ///          The implementation of these functions should be provided in the corresponding
@@ -11,8 +11,8 @@
 /// @author Khose-ie<khose-ie@outlook.com>
 /// @date   2026-06-14
 
+#include <sam.h>
 #include <stdint.h>
-#include <upes.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -584,4 +584,4 @@ void os_timer_stop(osTimerHandle_t timer);
 }
 #endif // __cplusplus
 
-#endif // _UPES_OS_H_
+#endif // _SAM_OS_H_
