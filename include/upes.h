@@ -104,13 +104,21 @@ typedef enum
 #define aligned_sizeof(type, aligned_type)                                                         \
     (aligned_countof(type, aligned_type) * sizeof(aligned_type))
 
-/// @brief Function used to get byte size aligned to 32-bit boundary
-/// @details This function calculates the byte size of a type aligned to a 32-bit boundary.
-#define sizeof32(type) ((sizeof(type) + 3) & ~3)
+/// @brief Function used to align a byte size to a 32-bit boundary
+/// @details This function calculates the byte size aligned to the next 32-bit boundary.
+#define align32up(number_of_bytes) (((number_of_bytes) + 3) & ~3)
 
-/// @brief Function used to get byte size aligned to 64-bit boundary
-/// @details This function calculates the byte size of a type aligned to a 64-bit boundary.
-#define sizeof64(type) ((sizeof(type) + 7) & ~7)
+/// @brief Function used to align a byte size to a 32-bit boundary downwards
+/// @details This function calculates the byte size aligned to the previous 32-bit boundary.
+#define align32down(number_of_bytes) ((number_of_bytes) & ~3)
+
+/// @brief Function used to align a byte size to a 64-bit boundary
+/// @details This function calculates the byte size aligned to the next 64-bit boundary.
+#define align64up(number_of_bytes) (((number_of_bytes) + 7) & ~7)
+
+/// @brief Function used to align a byte size to a 64-bit boundary downwards
+/// @details This function calculates the byte size aligned to the previous 64-bit boundary.
+#define align64down(number_of_bytes) ((number_of_bytes) & ~7)
 
 #ifdef __cplusplus
 }

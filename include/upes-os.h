@@ -325,12 +325,15 @@ osMemPoolHandle_t os_mem_pool_create(const char* name, uint32_t block_size, uint
 /// @details This function creates a new memory pool with the specified parameters,
 ///     using a statically allocated pool buffer.
 /// @param name        Name of the memory pool
-/// @param pool_buffer Pointer to the statically allocated pool buffer
+/// @param pool        Pointer to the statically allocated pool structure
+/// @param pool_size   Size of the statically allocated pool buffer in bytes
+/// @param pool_mem    Pointer to the statically allocated pool buffer
 /// @param block_size  Size of each memory block in bytes
 /// @param block_count Number of memory blocks in the pool
 /// @return Handle to the created memory pool or NULL on failure
-osMemPoolHandle_t os_mem_pool_create_static(const char* name, uint8_t* pool_buffer,
-                                            uint32_t block_size, uint32_t block_count);
+osMemPoolHandle_t os_mem_pool_create_static(const char* name, void* pool, uint32_t pool_size,
+                                            uint8_t* pool_mem, uint32_t block_size,
+                                            uint32_t block_count);
 
 /// @brief  Delete a memory pool
 /// @details This function deletes the specified memory pool and frees its resources.
