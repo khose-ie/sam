@@ -93,7 +93,7 @@ typedef struct
 {
     mediaEntityKind_t kind;
     mediaEntityTime_t time_stamp;
-    uint8_t attributes;
+    uint32_t attributes;
     uint64_t size;
 } mediaEntityState_t;
 
